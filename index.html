@@ -3,186 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>제주 귤 뽑기</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      background: linear-gradient(#bfe6ff 0%, #e8f7ff 60%, #b6e08a 60%, #8fcb62 100%);
-      font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-      overflow: hidden;
-      user-select: none;
-    }
-    h1 { margin: 0; color: #e8740c; font-size: 28px; }
-    .hint { margin: 0; color: #4a6b3a; font-size: 14px; }
-    .count {
-      background: #fff;
-      border: 2px solid #ff9f1c;
-      border-radius: 999px;
-      padding: 6px 18px;
-      font-weight: bold;
-      color: #c85a00;
-    }
-    .count span { font-size: 22px; }
-    .stage { position: relative; width: 320px; height: 360px; }
-    #tree { width: 100%; height: 100%; cursor: pointer; }
-    #tree:hover .canopy { filter: brightness(1.06); }
-    #tree.shake { animation: shake .4s; transform-origin: 50% 100%; }
-    @keyframes shake {
-      0%, 100% { transform: rotate(0); }
-      25% { transform: rotate(-2.5deg); }
-      75% { transform: rotate(2.5deg); }
-    }
-    .fruit {
-      position: absolute;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 35% 30%, #ffc14d, #ff8c00 70%);
-      box-shadow: inset -3px -4px 6px rgba(0,0,0,.15);
-      pointer-events: none;
-      animation: drop .8s cubic-bezier(.5, 0, 1, .6) forwards;
-    }
-    .fruit::after {
-      content: "";
-      position: absolute;
-      top: -4px; left: 13px;
-      width: 8px; height: 6px;
-      background: #3c8d2f;
-      border-radius: 50% 50% 0 50%;
-    }
-    @keyframes drop {
-      to { transform: translateY(var(--fall)) rotate(300deg); opacity: .95; }
-    }
-    .card {
-      position: fixed;
-      left: 50%; top: 50%;
-      transform: translate(-50%, -50%) scale(.8);
-      opacity: 0;
-      pointer-events: none;
-      background: #fffaf0;
-      border: 3px solid #ff9f1c;
-      border-radius: 18px;
-      padding: 24px 30px;
-      width: min(86vw, 340px);
-      text-align: center;
-      box-shadow: 0 12px 30px rgba(0,0,0,.25);
-      transition: opacity .3s, transform .3s;
-    }
-    .card.show { opacity: 1; transform: translate(-50%, -50%) scale(1); pointer-events: auto; }
-    .card .emoji { font-size: 40px; }
-    .card .jeju { margin: 8px 0 4px; font-size: 26px; font-weight: bold; color: #d9660a; }
-    .card .meaning { margin: 0 0 16px; color: #555; }
-    .card button {
-      border: 0;
-      background: #ff9f1c;
-      color: #fff;
-      font-size: 15px;
-      padding: 8px 22px;
-      border-radius: 999px;
-      cursor: pointer;
-    }
-    .card button:hover { background: #e8890a; }
-  </style>
+  <title>안녕하세요</title>
 </head>
 <body>
-  <h1>🍊 제주 귤 뽑기</h1>
-  <p class="hint">귤나무를 눌러 보세요!</p>
-  <div class="count">뽑은 귤 <span id="count">0</span>개</div>
-
-  <div class="stage" id="stage">
-    <svg id="tree" viewBox="0 0 320 360" aria-label="귤나무">
-      <rect x="140" y="190" width="40" height="150" rx="10" fill="#8b5a2b"/>
-      <rect x="150" y="200" width="6" height="110" rx="3" fill="#a06b38"/>
-      <g class="canopy">
-        <circle cx="160" cy="120" r="95" fill="#3f9d3a"/>
-        <circle cx="95" cy="150" r="65" fill="#4aae44"/>
-        <circle cx="225" cy="150" r="65" fill="#4aae44"/>
-        <circle cx="160" cy="70" r="60" fill="#55b94d"/>
-      </g>
-      <g id="oranges">
-        <circle cx="110" cy="110" r="15" fill="#ff8c00"/>
-        <circle cx="170" cy="85" r="15" fill="#ff9a1a"/>
-        <circle cx="215" cy="135" r="15" fill="#ff8c00"/>
-        <circle cx="130" cy="165" r="15" fill="#ff9a1a"/>
-        <circle cx="190" cy="170" r="15" fill="#ff8c00"/>
-        <circle cx="85" cy="155" r="15" fill="#ff9a1a"/>
-        <circle cx="150" cy="130" r="15" fill="#ff8c00"/>
-        <circle cx="235" cy="170" r="15" fill="#ff9a1a"/>
-      </g>
-      <ellipse cx="160" cy="342" rx="70" ry="9" fill="rgba(0,0,0,.12)"/>
-    </svg>
+  <div>
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
+    <img src="image.jpg" alt="제주 귤 뽑기 화면" width="80">
   </div>
-
-  <div class="card" id="card" role="dialog" aria-live="polite">
-    <div class="emoji">🍊</div>
-    <div class="jeju" id="jeju"></div>
-    <p class="meaning" id="meaning"></p>
-    <button id="close">고맙수다!</button>
-  </div>
-
-  <script>
-    const blessings = [
-      { jeju: "혼저 옵서예", meaning: "어서 오세요" },
-      { jeju: "폭삭 속았수다", meaning: "수고 많으셨습니다" },
-      { jeju: "맨도롱 또똣", meaning: "기분 좋게 알맞게 따뜻하다" },
-      { jeju: "놀멍 쉬멍 갑서", meaning: "놀면서 쉬면서 가세요" },
-      { jeju: "하영 먹읍서", meaning: "많이 드세요" },
-      { jeju: "복 하영 받읍서", meaning: "복 많이 받으세요" },
-      { jeju: "고맙수다", meaning: "고맙습니다" },
-      { jeju: "반갑수다", meaning: "반갑습니다" },
-      { jeju: "와리지 말앙 천천히 갑서", meaning: "서두르지 말고 천천히 가세요" },
-      { jeju: "아프지 말앙 오래오래 삽서", meaning: "아프지 말고 오래오래 사세요" }
-    ];
-
-    const tree = document.getElementById("tree");
-    const stage = document.getElementById("stage");
-    const card = document.getElementById("card");
-    const countEl = document.getElementById("count");
-    let count = 0;
-    let busy = false;
-
-    function pick() {
-      if (busy) return;
-      busy = true;
-
-      tree.classList.remove("shake");
-      void tree.getBBox();
-      tree.classList.add("shake");
-
-      const fruit = document.createElement("div");
-      fruit.className = "fruit";
-      const startX = 80 + Math.random() * 150;
-      const startY = 90 + Math.random() * 70;
-      fruit.style.left = startX + "px";
-      fruit.style.top = startY + "px";
-      fruit.style.setProperty("--fall", (330 - startY) + "px");
-      stage.appendChild(fruit);
-
-      setTimeout(() => {
-        count++;
-        countEl.textContent = count;
-        const b = blessings[Math.floor(Math.random() * blessings.length)];
-        document.getElementById("jeju").textContent = b.jeju;
-        document.getElementById("meaning").textContent = "뜻: " + b.meaning;
-        card.classList.add("show");
-      }, 800);
-    }
-
-    function closeCard() {
-      card.classList.remove("show");
-      document.querySelectorAll(".fruit").forEach(f => f.remove());
-      busy = false;
-    }
-
-    tree.addEventListener("click", pick);
-    document.getElementById("close").addEventListener("click", closeCard);
-  </script>
+  <p style="color: red;">안녕하세요</p>
+  <button onclick="alert('안녕하세요 반갑습니다.')">클릭</button>
 </body>
 </html>
